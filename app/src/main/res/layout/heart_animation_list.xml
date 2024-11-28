@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:drawable="@drawable/ic_heart_0" android:duration="200"/>
+        <item android:drawable="@drawable/ic_heart_25" android:duration="200"/>
+        <item android:drawable="@drawable/ic_heart_50" android:duration="200"/>
+        <item android:drawable="@drawable/ic_heart_75" android:duration="200"/>
+        <item android:drawable="@drawable/ic_heart_100" android:duration="200"/>
+    </animation-list>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:startOffset="1000"
+        android:shareInterpolator="false">
+        <translate android:fromXDelta="1.0"
+            android:fromYDelta="1.0"
+            android:toXDelta="10.0"
+            android:toYDelta="100.0"
+            android:duration="750">
+        </translate>
+        <rotate android:fromDegrees="0"
+            android:toDegrees="360"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:duration="1500">
+        </rotate>
+        <scale
+            android:pivotY="50%"
+            android:pivotX="50%"
+            android:duration="750"
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:toXScale="2.0"
+            android:toYScale="2.0">
+        </scale>
+        <scale
+            android:pivotY="50%"
+            android:pivotX="50%"
+            android:duration="750"
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:toXScale="0.5"
+            android:toYScale="0.5"
+            android:startOffset="750">
+        </scale>
+        <translate android:fromXDelta="1.0"
+            android:fromYDelta="1.0"
+            android:toXDelta="-10.0"
+            android:toYDelta="-100.0"
+            android:duration="750"
+            android:startOffset="750" >
+        </translate>
+    </set>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

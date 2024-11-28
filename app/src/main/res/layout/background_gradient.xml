@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <gradient
+            android:startColor="#FFDD8DB8"
+            android:endColor="#FF84ADFF"
+            android:type="radial"
+            android:centerX="0.9"
+            android:centerY="0.9"
+            android:gradientRadius="1500"/>
+    </shape>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

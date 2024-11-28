@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="MAD_Animation_Practical"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/materialCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252" />
+    />
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="369dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="#F7FBFF"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/clockImg"
+            android:layout_width="match_parent"
+            android:layout_height="280dp" />
+        <TextView
+            android:id="@+id/createAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="290dp"
+            android:text="Create Alarm Time"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/pressingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginRight="10dp"
+            android:text="By pressing buttons, Alarm can be created and cancelled." />
+        <ImageView
+            android:id="@+id/heartAnim"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="410dp"
+            app:srcCompat="@drawable/heart_animation_list" />
+        <TextView
+            android:id="@+id/checkCurrTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="370dp"
+            android:text="Check current time by looking below real digital clock." />
+        <Button
+            android:id="@+id/createAlarmBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="440dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#FF84ADFF"
+            android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+            android:drawableTint="@android:color/white"
+            android:text="Create"
+            android:textAlignment="center" />
+        <Button
+            android:id="@+id/cancelAlarmBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="440dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+            android:drawableTint="#FF84ADFF"
+            android:text="Cancel"
+            android:textAlignment="center"
+            android:textColor="#FF84ADFF" />
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
